@@ -1,0 +1,9 @@
+build
+coverage
+dist
+out
+
+package-lock.json
+
+.next
+.idea
