@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save multi-level-table
+npm install --save @dsi/multi-level-table
 ```
 
 ## Usage
