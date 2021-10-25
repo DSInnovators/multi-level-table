@@ -3,10 +3,10 @@
  * @since 13 October 2021
  * @copyright Dynamic Solution Innovators
  */
-import "./style.css";
-import "./normalize.css";
-import PropTypes from "prop-types";
-import React, { useEffect, useRef, useState } from "react";
+import './style.css'
+import './normalize.css'
+import PropTypes from 'prop-types'
+import React, { useEffect, useRef, useState } from 'react'
 
 const getFields = (structure) => [
   ...structure.children.map((child) => child.display),
@@ -56,6 +56,7 @@ const dropdown =
           className='flex flex-row items-center justify-center cursor-pointer'
         >
           {actionLabel}
+          {show ? <span>&#8593;</span> : <span>&#8595;</span>}
         </span>
         {show && (
           <div className='flex flex-col absolute right-0 bg-white rounded-md shadow-md gap-2 p-2 whitespace-nowrap border border-gray-300'>
@@ -66,7 +67,6 @@ const dropdown =
                 className='flex flex-row items-center cursor-pointer text-md hover:bg-gray-300 p-2 rounded-md'
               >
                 {action.name}
-                <span>{show ? '&#8593;' : '&#8595;'}</span>
               </span>
             ))}
           </div>
