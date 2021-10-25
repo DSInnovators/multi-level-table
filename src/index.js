@@ -3,10 +3,10 @@
  * @since 13 October 2021
  * @copyright Dynamic Solution Innovators
  */
-import './style.css'
-import './normalize.css'
-import PropTypes from 'prop-types'
-import React, { useEffect, useRef, useState } from 'react'
+import "./style.css";
+import "./normalize.css";
+import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from "react";
 
 const getFields = (structure) => [
   ...structure.children.map((child) => child.display),
@@ -154,7 +154,7 @@ const MultiLevelTable = ({
   structure,
   actions,
   actionLabel,
-  className: { table, head, body }
+  className
 }) => {
   const getChain = createGetChain(structure, data)
   const getColumns = createGetColumns(getChain, actions, actionLabel)
@@ -167,9 +167,9 @@ const MultiLevelTable = ({
   ]
 
   return (
-    <table className={table}>
-      <TableHeader fields={fields} head={head} />
-      <TableBody rows={rows} body={body} />
+    <table className={className?.table}>
+      <TableHeader fields={fields} head={className?.head} />
+      <TableBody rows={rows} body={className?.body} />
     </table>
   )
 }
