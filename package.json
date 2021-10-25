@@ -1,10 +1,17 @@
 {
-  "name": "@dsi/multi-level-table",
+  "name": "@dsinnovators/multi-level-table",
   "private": false,
   "version": "1.0.0",
-  "description": "Made with Semantic HTML Table",
+  "description": "Usage of MultiLevelTable is very easy. Just pass data to the table and define the structure of data and pass it through the structure prop. Add any actions for any object or multi-nested object.",
   "author": "Ishmum Jawad Khan",
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
+  "contributors": [
+    {
+      "name": "Tamzid Ahmed",
+      "url": "https://github.com/tamzid958",
+      "email": "tamjidahmed958@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/DSInnovators/multi-level-table"
@@ -18,8 +25,7 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
-    "prepare": "npm run build",
-    "publish": "npm publish --access public"
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": "^16.0.0"

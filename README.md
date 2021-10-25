@@ -1,13 +1,26 @@
-# multi-level-table
+# MultiLevelTable
 
 > Developed by Ishmum Jawad Khan
 
-[![NPM](https://img.shields.io/npm/v/multi-level-table.svg)](https://www.npmjs.com/package/multi-level-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/multi-level-table.svg)](https://www.npmjs.com/package/@dsinnovators/multi-level-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
+## Description:
+_Table is quite easy to build and render.
+But complexity arises when a nested object is needed to be rendered in a table.
+Here comes MultiLevelTable developed in **[Dynamic Solution Innovators](http://dsinnovators.com/)**.
+More complexity arrives when a semantic table is needed to build with pure
+strategy._ <br><br>
+_Usage of MultiLevelTable is very easy. Just pass data to the table and
+define the structure of data and pass it through the structure prop.
+Add any actions for any object or multi nested object._
+
+## Output
+![MultiLevelTable](https://github.com/DSInnovators/multi-level-table/blob/main/assets/output.jpeg?raw=true)
 
 ## Install
-
 ```bash
-npm install --save @dsi/multi-level-table
+npm install --save @dsinnovators/multi-level-table
 ```
 
 ## Usage
@@ -154,9 +167,6 @@ const ExamplePage = () => {
 }
 ```
 
-### Output:
-![MultiLevelTable](./assets/output.jpeg)
-
 ### Parameters
 | Parameter | Required | Description | Default | Type
 | :---: | :---: | :---: | :---: | :---: |
@@ -167,4 +177,6 @@ const ExamplePage = () => {
 | className | false | takes a object {table, head, body}. pass CSS classNames to customize table | [see above](#mlt-custom-css-classnames) | {table: string, head: string, body: string}
 
 ## License
-MIT © [Dynamic Solution Innovators](https://github.com/orgs/DSInnovators/)
+GNU General Public License v3.0
+
+#### **©** [Dynamic Solution Innovators](https://github.com/orgs/DSInnovators/)
