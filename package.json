@@ -29,7 +29,7 @@
     "start": "webpack --watch",
     "build": "webpack",
     "prepare": "npm run build",
-    "pub": "npm version patch && npm publish"
+    "pub": "npm run build && npm version patch && npm publish"
   },
   "peerDependencies": {
     "react": "^16.0.0"

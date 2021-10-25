@@ -123,8 +123,8 @@ const getChain = (indices, structure, data) => {
 const createGetChain = (structure, data) => (indices) =>
   getChain(indices, structure, data)
 
-const TableHeader = ({ fields, header }) => (
-  <thead className={header}>
+const TableHeader = ({ fields, head }) => (
+  <thead className={head}>
     <tr>
       {fields.map((name) => (
         <th className='p-2 py-3' key={name}>
@@ -149,17 +149,13 @@ const TableBody = ({ rows, body }) => (
   </tbody>
 )
 
-export default function MultiLevelTable({
+const MultiLevelTable = ({
   data,
   structure,
-  actions = [],
-  actionLabel = 'Action',
-  className: {
-    table = 'w-full shadow-sm overflow-hidden rounded-lg text-center',
-    head = 'text-white bg-gray-700 text-center',
-    body = 'p-2 border-solid border border-light-blue-300'
-  }
-}) {
+  actions,
+  actionLabel,
+  className: { table, head, body }
+}) => {
   const getChain = createGetChain(structure, data)
   const getColumns = createGetColumns(getChain, actions, actionLabel)
   const getRows = createGetRows(getColumns)
@@ -172,11 +168,13 @@ export default function MultiLevelTable({
 
   return (
     <table className={table}>
-      <TableHeader fields={fields} header={head} />
-      <TableBody rows={rows || []} body={body} />
+      <TableHeader fields={fields} head={head} />
+      <TableBody rows={rows} body={body} />
     </table>
   )
 }
+
+export default MultiLevelTable
 
 MultiLevelTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
@@ -193,4 +191,14 @@ MultiLevelTable.propTypes = {
     head: PropTypes.string,
     body: PropTypes.string
   })
+}
+
+MultiLevelTable.defaultProps = {
+  actionLabel: 'Action',
+  actions: [],
+  className: {
+    table: 'w-full shadow-sm overflow-hidden rounded-lg text-center',
+    head: 'text-white bg-gray-700 text-center',
+    body: 'p-2 border-solid border border-light-blue-300'
+  }
 }

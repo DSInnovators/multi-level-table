@@ -1,6 +1,6 @@
 # MultiLevelTable
 
-> Developed by Ishmum Jawad Khan
+> Developed by **[Ishmum Jawad Khan](https://github.com/ishmum123)**
 
 [![NPM](https://img.shields.io/npm/v/@dsinnovators/multi-level-table.svg)](https://www.npmjs.com/package/@dsinnovators/multi-level-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -127,7 +127,7 @@ const structure =
 
 ### Action
 ```js
-const action =
+const actions =
   [
     {
       name: "View Course Details",
@@ -155,7 +155,7 @@ const className =  {
 
 ### Component
 ```jsx
-import MultiLevelTable from 'multi-level-table'
+import MultiLevelTable from '@dsinnovators/multi-level-table'
 
 const ExamplePage = () => {
   return <MultiLevelTable
