@@ -3,8 +3,11 @@
   "private": false,
   "version": "1.0.1",
   "description": "Usage of MultiLevelTable is very easy. Just pass data to the table and define the structure of data and pass it through the structure prop. Add any actions for any object or multi-nested object.",
-  "author": "Ishmum Jawad Khan",
-  "license": "GNU General Public License v3.0",
+  "author": {
+    "name": "Ishmum Jawad Khan",
+    "url": "https://github.com/ishmum123"
+  },
+  "license": "GPL-3.0",
   "contributors": [
     {
       "name": "Tamzid Ahmed",
@@ -25,7 +28,8 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "pub": "npm version patch && npm publish"
   },
   "peerDependencies": {
     "react": "^16.0.0"

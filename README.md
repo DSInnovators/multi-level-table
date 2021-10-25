@@ -6,11 +6,12 @@
 
 
 ## Description:
-_Table is quite easy to build and render.
+_A Table is quite easy to build and render.
 But complexity arises when a nested object is needed to be rendered in a table.
-Here comes MultiLevelTable developed in **[Dynamic Solution Innovators](http://dsinnovators.com/)**.
-More complexity arrives when a semantic table is needed to build with pure
-strategy._ <br><br>
+Further more complexity arrives when a semantic table is needed to build with pure
+strategy.
+Here comes MultiLevelTable developed in **[Dynamic Solution Innovators](http://dsinnovators.com/)**._
+<br><br>
 _Usage of MultiLevelTable is very easy. Just pass data to the table and
 define the structure of data and pass it through the structure prop.
 Add any actions for any object or multi nested object._
@@ -179,4 +180,4 @@ const ExamplePage = () => {
 ## License
 GNU General Public License v3.0
 
-#### **©** [Dynamic Solution Innovators](https://github.com/orgs/DSInnovators/)
+#### **©** [Dynamic Solution Innovators](http://dsinnovators.com/)
