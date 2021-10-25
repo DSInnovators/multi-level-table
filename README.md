@@ -90,13 +90,22 @@ const data = [
 const structure =
   {
     name: "institutions",
-    children: [{ field: "name", display: "Institute" }],
+    children: [{
+      field: "name",
+      display: "Institute"
+    }],
     array: {
       name: "degrees",
-      children: [{ field: "name", display: "Degree" }],
+      children: [{
+        field: "name",
+        display: "Degree"
+      }],
       array: {
         name: "courses",
-        children: [{ field: "name", display: "Course" }],
+        children: [{
+          field: "name",
+          display: "Course"
+        }],
       },
     },
   };
@@ -121,7 +130,7 @@ const action =
   ]
 ```
 
-### Custom CSS classNames
+### <p id="mlt-custom-css-classnames">Custom CSS classNames</p>
 ```jsx
 const className =  {
   table : 'w-full shadow-sm overflow-hidden rounded-lg text-center',
@@ -148,6 +157,14 @@ const ExamplePage = () => {
 ### Output:
 ![MultiLevelTable](./assets/output.jpeg)
 
-## License
+### Parameters
+| Parameter | Required | Description | Default | Type
+| :---: | :---: | :---: | :---: | :---: |
+| data | true | fetch data from api or any static data | undefined | ArrayOf(object)
+| structure | true | specify the structure of given data | undefined | object
+| actions | false | takes array of object {name, callback}. add any actions for nested data | undefined | ArrayOf({ name: string, callback: func})
+| actionLabel | false | give action label for actions | Action | string
+| className | false | takes a object {table, head, body}. pass CSS classNames to customize table | [see above](#mlt-custom-css-classnames) | {table: string, head: string, body: string}
 
+## License
 MIT © [Dynamic Solution Innovators](https://github.com/orgs/DSInnovators/)
