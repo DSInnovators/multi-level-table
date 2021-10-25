@@ -48,5 +48,13 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "json2table",
+    "Nested Table",
+    "Json To Table",
+    "Complex Table",
+    "Semantic Table",
+    "React Table"
   ]
 }
