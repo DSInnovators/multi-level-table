@@ -1,7 +1,7 @@
 {
   "name": "@dsinnovators/multi-level-table",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Usage of MultiLevelTable is very easy. Just pass data to the table and define the structure of data and pass it through the structure prop. Add any actions for any object or multi-nested object.",
   "author": {
     "name": "Ishmum Jawad Khan",
