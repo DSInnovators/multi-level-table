@@ -2,7 +2,7 @@
 
 > Developed by Ishmum Jawad Khan
 
-[![NPM](https://img.shields.io/npm/v/multi-level-table.svg)](https://www.npmjs.com/package/@dsinnovators/multi-level-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@dsinnovators/multi-level-table.svg)](https://www.npmjs.com/package/@dsinnovators/multi-level-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 ## Description:
