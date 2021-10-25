@@ -1,5 +1,6 @@
 {
-  "name": "multi-level-table",
+  "name": "@dsi/multi-level-table",
+  "private": false,
   "version": "1.0.0",
   "description": "Made with Semantic HTML Table",
   "author": "Ishmum Jawad Khan",
