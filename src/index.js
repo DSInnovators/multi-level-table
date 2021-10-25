@@ -66,6 +66,7 @@ const dropdown =
                 className='flex flex-row items-center cursor-pointer text-md hover:bg-gray-300 p-2 rounded-md'
               >
                 {action.name}
+                <span>{show ? '&#8593;' : '&#8595;'}</span>
               </span>
             ))}
           </div>
