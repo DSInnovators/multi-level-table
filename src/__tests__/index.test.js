@@ -74,8 +74,25 @@ const data = [
   },
   {
     id: 3,
-    name: "Test University"
-  }
+    name: "Test University",
+    degrees: [],
+  },
+  {
+    id: 4,
+    name: "Laborum University",
+    degrees: [
+      {
+        id: 1,
+        name: "B.Sc",
+        courses: [],
+      },
+      {
+        id: 2,
+        name: "M.Sc",
+        courses: [],
+      },
+    ],
+  },
 ];
 
 const structure = {
@@ -180,7 +197,35 @@ test('checking rowspan of institute names', () => {
   expect(cell.rowSpan).toBe(5)
 })
 
+test('check empty array except first column', () => {
+  render(
+    <MultiLevelTable
+      data={data}
+      structure={structure}
+      actions={actions}
+      actionLabel={actionLabel}
+    />
+  )
 
+  const row = screen.getByRole('row', { name: 'Test University'})
+  //console.log(row)
+  expect(row).toBeInTheDocument()
 
+})
+test('check empty array except first two column', () => {
+  render(
+    <MultiLevelTable
+      data={data}
+      structure={structure}
+      actions={actions}
+      actionLabel={actionLabel}
+    />
+  )
+
+  const row = screen.getByRole('row', { name: 'Laborum University B.Sc'})
+  //console.log(row)
+  expect(row).toBeInTheDocument()
+
+})
 
 
